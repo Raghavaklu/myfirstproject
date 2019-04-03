@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!-- Page Title -->
+<title>Verdentum</title>
+<!-- Favicon and Touch Icons -->
+<link href="https://www.verdentum.org/include/base/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+<!-- Stylesheet -->
+<link href="https://www.verdentum.org/includeout/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://www.verdentum.org/includeout/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="https://www.verdentum.org/includeout/css/animate.css" rel="stylesheet" type="text/css">
+<!-- <link href="https://www.verdentum.org/includeout/css/css-plugin-collections.css" rel="stylesheet"/> -->
+<!-- CSS | menuzord megamenu skins -->
+<!-- <link id="menuzord-menu-skins" href="https://www.verdentum.org/includeout/css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/> -->
+<!-- CSS | Main style file -->
+<link href="https://www.verdentum.org/includeout/css/style-main.css" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="https://www.verdentum.org/includeout/css/preloader.css" rel="stylesheet" type="text/css">
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="https://www.verdentum.org/includeout/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="https://www.verdentum.org/includeout/css/responsive.css" rel="stylesheet" type="text/css">
+<!-- external javascripts -->
+<script src="https://www.verdentum.org/includeout/js/jquery-2.2.0.min.js"></script>
+<script src="https://www.verdentum.org/includeout/js/jquery-ui.min.js"></script>
+<script src="https://www.verdentum.org/includeout/js/bootstrap.min.js"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<!-- <script src="https://www.verdentum.org/includeout/js/jquery-plugin-collection.js"></script> -->
+<!-- Revolution Slider 5.x CSS settings -->
+<!-- <link  href="https://www.verdentum.org/includeout/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/> -->
+<!-- <link  href="https://www.verdentum.org/includeout/js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
+<link  href="https://www.verdentum.org/includeout/js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css"/> -->
+<link  href="https://www.verdentum.org/includeout/css/custom_style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://www.verdentum.org/include/base/assets/fonts/font-awesome.min.css">
+<!-- CSS | Theme Color -->
+<!-- <link href="css/colors/theme-skin-green.css" rel="stylesheet" type="text/css"> -->
+<!-- Revolution Slider 5.x SCRIPTS -->
+<!-- <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script> -->
+</head>
+<body class="">
+<div id="wrapper">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top bg-deep sm-text-center" style="background-color: black;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" id="nav_text">
+            <span><i class="fa fa-bars" aria-hidden="true" id="hamb" onclick="openNav();"></i></span>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+              <a href="https://www.verdentum.org/about">About</a>
+              <a href="https://www.verdentum.org/management">Management</a>
+              <a href="https://www.verdentum.org/products">Product</a>
+              <a href="https://www.verdentum.org/clients">Client</a>
+              <a href="https://www.verdentum.org/contact">Contact</a>
+            </div>
+            <div class="widget no-border m-0">
+              <a href="https://www.verdentum.org/">
+                <img src="https://www.verdentum.org/includeout/images/logo.png" alt="" style="height: 40px; margin-top: 10px; margin-bottom: 10px">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-7 col-sm-12 col-xs-12" style="text-align: right;" id="mob_login_form">
+                        <div class="widget no-border m-0">
+              <form action="https://www.verdentum.org/auth" name="login_form" id="login_form" method="POST" style="height:50px;" accept-charset="utf-8">
+<input type="hidden" name="csrf_test_name" value="821190723ca44d37f87bbc19e4995f88" />                                             
+              <!-- <form name="login_form" id="login_form" method="post" action="https://www.verdentum.org/auth/" style="height: 50px;"> -->
+              <ul class="mt-15 pull-right" id="login_form_ul">
+                                <li class="login_li">
+                  <input type="text" id="uname" name="uname" placeholder="Email or Username" style="border:1px solid #4d80bc; height: 30px; border-radius: 2px; width: 100%;" class="form-control" value="">
+                                  </li>
+                <li class="login_li">
+                  <input type="password" id="upswd" name="upswd" placeholder="Password" style="border:1px solid #4d80bc; height: 30px; border-radius: 2px;" class="form-control" value="" onpaste="return false;" onCopy="return false" onCut="return false">
+                                  </li>
+                <li class="login_li lbtn">
+                  <button class="login_btn lb btn btn-primary btn-sm" style="background-color: #FFFFFF; border:1px solid #4d80bc; border-radius: 2px; margin-top: -5px; color: #4d80bc" type="submit">Login</button>
+                </li>
+                <li class="login_li" style="margin-left: 10px;">
+                  <a href="https://www.verdentum.org/auth/lostpassword/"><p style="margin-top: -10px;">Forgot Password ?</p></a>
+                </li>
+              </ul>
+            </form>            </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+</script><div class="main-content">
+	<section>
+      <div class="row">
+        <div class="display-table" id="black_header">
+  <div class="display-table-cell">
+    <div class="row" style="background-color: #000000;">
+      <div class="container">
+        <div class="col-md-12">
+          <ul id="nav_ul">
+              <li style="margin-top:10px;">
+                <div class="dropdown">
+                  <a class="navb_li dropbtn inactive" href="javascript:void(0)">about</a>
+                  <div class="dropdown-content">
+                    <a href="https://www.verdentum.org/about">Overview</a>
+                    <a href="https://www.verdentum.org/management">Management</a>
+                    <!-- <a href="https://www.verdentum.org/about">Testimonials</a> -->
+                    <!-- <a href="https://www.verdentum.org/news_events">News and Events</a>
+ -->                    <!-- <a href="https://www.verdentum.org/management">Genesis</a> -->
+                  </div>
+                </div>
+              </li>
+              <li class="navb_li"><a href="https://www.verdentum.org/products" class="inactive">product</a></li>
+              <li class="navb_li"><a href="https://www.verdentum.org/clients" class="inactive">work</a></li>
+              <!-- <li class="navb_li"><a href="https://www.verdentum.org/news" class="active">news</a></li> -->
+              <li class="navb_li"><a href="https://www.verdentum.org/contact" class="inactive">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>      </div>
+    </section>
+	<div class="row">
+		<div class="container mt-50">
+
+			<div class="col-md-6">
+				<h1 style="font-size: 40px;">I AM ABLE Campaign</h1>
+			</div>
+			<div class="col-md-6" style="text-align: right; margin-top: 20px;">
+				<h5>Commonwealth Youth Council</h5>
+			</div>
+
+			<img src="https://www.verdentum.org/includeout/images/site3.jpg" style="margin-top: 50px;">
+
+			<p style="font-weight: bold; font-size: 18px; margin-top: 20px; padding: 10px;">The I AM ABLE initiative aims to address the marginalisation and discrimination of people with disabilities in the Commonwealth’s 52 countries. The campaign involves educational outreach, myth-busting on social media, and leadership training for young people with physical, mental and learning disabilities. As a step towards increasing connectivity of its members and providing a better framework for measuring progress on the campaign, the CYC has implemented Verdentum technology and invited key stakeholders to upload data and information on their activities related to disability rights and the campaign on the Verdentum platform.Currently members from 9 commonwealth countries are registered on the platform and have been sharing information. There are plans to open up the usage of the platform to participants in all 52 commonwealth countries.The platform has allowed sharing of pictures and information from places with little internet, that have been difficult to connect.</p>
+
+
+			
+		</div>
+
+		<div class="container mb-50 mt-50">
+			<div class="col-md-6">
+				<img src="https://www.verdentum.org/includeout/images/cyc1.PNG" style="width: 100%;">
+			</div>
+		<div class="col-md-6">
+			<img src="https://www.verdentum.org/includeout/images/cyc2.PNG" style="width: 100%;">
+		</div>
+		</div>
+
+		<div class="container mb-100">
+			<p style="font-weight: bold; font-size: 18px; margin-top: 20px; padding: 10px;">By using Verdentum technology, the CYC is able to not only connect their network of participants, but keep track of progress in real time, analyse impact, and have graphs and reports that are updated in real time.</p>
+
+			<p style="font-weight: bold; font-size: 18px; margin-top: 20px; padding: 10px;">The Commonwealth Youth Council (CYC) is the largest and most diverse youth-led organisation in the world. It is recognized voice of more than 1.2 billion young people in the commonwelth. It has established by the Heads of Governments in the commonwealth in line with the Commonwealth Charter. It is an exiting inclusive initiative that seeks to communicate, engage and advocate for youth led participation. The CYC is an independent entity responsible for youth representation in the Commonwealth.</p>
+		</div>
+	</div>
+</div> <!-- Footer -->
+  <footer id="footer" class="footer pb-0" data-bg-img="https://www.verdentum.org/includeout/images/footer-bg.png" data-bg-color="#25272e" style="background-color: #25272e;">
+    <div class="container pb-20">
+      <div class="row multi-row-clearfix">
+        <div class="col-sm-6 col-md-4">
+          <div class="widget dark"> <!-- <img alt="" src="https://www.verdentum.org/includeout/images/logo_light.png"> -->
+            <p class="font-12 mt-20 mb-10" style="color: #FFFFFF;">A social network that lets you launch and coordinate high impact development projects, work together with volunteers and staff globally, and monitor progress in real time—all for a better planet.</p>
+            <a class="text-gray font-12" href="https://www.verdentum.org/about/"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Quick links</h5>
+            <ul class="list-border list theme-colored angle-double-right">
+              <li><a href="https://www.verdentum.org/about/">About</a></li>
+              <li><a href="https://www.verdentum.org/products/">Products</a></li>
+              <li><a href="https://www.verdentum.org/clients/">Clients</a></li>
+              <!-- <li><a href="https://www.verdentum.org/news/">News</a></li> -->
+              <li><a href="https://www.verdentum.org/contact/">Contact</a></li>
+              <li><a href="https://www.verdentum.org/privacy_policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <!-- Essential JS -->
+          <script src="https://www.verdentum.org/include/global/vendor/jquery/jquery.js"></script>
+          <script src="https://www.verdentum.org/includenew/global/vendor/moment/moment.js"></script>
+          <!-- Widget JS -->
+          <script type="text/javascript">
+            function supportImports() {
+              return 'import' in document.createElement('link');
+            }
+            function handleLoad(e) {
+              console.log('Loaded import: ' + e.target.href);
+              // Access the imported data
+              var vdWidgetPost = document.querySelector('link[rel="import"].vd-widget-post');
+              // Clone the <template> in the import.
+              var template = vdWidgetPost.import.querySelector('template');
+              var clone = document.importNode(template.content, true);
+              // Append cloned template to main documnet
+              document.querySelector('.vd-widget').appendChild(clone);
+              // Call the post loading function
+              vdWidgetLoadPosts();
+            }
+            function handleError(e) {
+              console.log('Error loading import: ' + e.target.href);
+            }
+            // Check browser support for HTML5 Import
+            if (!supportImports()) {
+              $('.vd-widget').html('<h4 class="text-center">HTML5 import is not supported in this browser. Please use an updated version or switch to a browser which uses HTML5 import.</h4>');
+            }
+          </script>
+
+          <link rel="import" href="http://52.40.207.123/verd_apikey/widget/post/SN54JG/0E67AE13348CC47E3135DEEEC70CDD03267926582EBE8B36D7EE229865D6E84D"
+          class="vd-widget-post" onload="handleLoad(event)" onerror="handleError(event)">
+          <div class="vd-widget" style="height:300px;overflow-y:auto;"></div>
+          <!-- <div class="widget dark">
+            <h5 class="widget-title line-bottom">Quick Contact</h5>
+            <ul class="list-border">
+              <li><a href="#">info@verdentum.org</a></li>
+              <li><a href="#" class="lineheight-20">Flat no: 908, Vijetha Midas Touch Apartments,<br>White Field Road, Venkat Enclave, Whitefields, HITECH City, Hyderabad, Telangana</a></li>
+            </ul>
+            <p class="text-white mb-5 mt-15">Lets Connect</p>
+            <ul class="social-icons small square list-inline mt-10">
+              <li><a href="https://www.facebook.com/Verdentum/"><i class="fa fa-facebook text-white" style="font-size: 15px;"></i></a></li>
+              <li><a href="https://twitter.com/verdentum""><i class="fa fa-twitter text-white" style="font-size: 15px;"></i></a></li>
+              
+              <li><a href="https://www.youtube.com/channel/UC-h-y3gaPggtp0nRD4vLnjw?disable_polymer=true"><i class="fa fa-youtube text-white" style="font-size: 15px;"></i></a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-20" style="background-color: #4d80bc;">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <p class="text-white font-11 m-0">Copyright ©2018 Verdentum. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- Scripts starts here -->
+<!-- <script src="https://www.verdentum.org/includeout/js/custom.js"></script> -->
+<script>
+function isEmail( string ) {    
+  if(string.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) != -1)
+  return true; else return false; 
+}
+
+$(function() {
+  $('#login_form').submit(function(ev) {
+    // $('#uname').next('p').remove();
+    // $('#upswd').next('p').remove();
+    $('#uname').css("border",'1px solid #4F81BF');
+    $('#upswd').css("border",'1px solid #4F81BF');
+    if(this.uname.value === "") {
+      ev.preventDefault();
+      // $('#uname').after("<p style='color:#000000;font-weight:600;font-size:10px;'>Please Enter E-Mail ID or Username!</p>");
+      $('#uname').css("border",'2px solid red');
+      this.uname.focus();
+    }
+    /*else if(isEmail(this.uname.value)==false) {
+      ev.preventDefault();
+      $('#uname').after("<p style='color:#FFFFFF;font-weight:600;'>Please Enter a Valid E-Mail ID !</p>");
+      this.uname.focus();
+    }*/
+    if(this.upswd.value === "") {
+      ev.preventDefault();
+      // $('#upswd').after("<p style='color:#000000;font-weight:600;font-size:10px;'>Please Enter Password</p>");
+      $('#upswd').css("border",'2px solid red');
+      this.upswd.focus();
+    }
+  });
+});
+
+function forgotsubmit(){ 
+var d = document.forgot_form;
+if(d.uname.value == ""){alert("please enter username"); d.uname.focus(); return false;}
+if(isEmail(d.uname.value)==false){alert("Please Enter a Valid E-Mail ID !"); d.uname.focus(); return false;}
+document.forgot_form.submit();
+}
+
+
+//block copy paste for password field
+$('#upswd').bind("contextmenu",function(e){
+  e.preventDefault();
+  alert('Due to security reasons, Right Click is not allowed.');
+});
+</script>
+</body>
+</html>
